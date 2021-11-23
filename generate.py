@@ -7,7 +7,6 @@ l1 = []
 l2 = []
 l3 = []
 l4 = []
-re = []
 me = '我'
 my = '我的'
 l33 = ['那么']*3+['又']*3+['意想不到地']
@@ -85,6 +84,7 @@ def generate_txt(name: str):
     for i in range(random.randint(2, 4)):
         raw.insert(random.randint(0, len(raw)), name)
 
+    re = []
     for i in range(len(raw)):
         re.append(raw[i])
         re.append(punc())
